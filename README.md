@@ -1,12 +1,6 @@
----
-layout: page
-title: Lab 3 - Data structures in C
----
+# Lab 3 - Data structures in C
 
 In this lab you will develop some general-purpose data structures that, with modular design, can be re-used for other labs - most notably, the Tiny Search Engine (Labs 4-5-6).
-
-* TOC
-{:toc}
 
 Grading will focus on [CS50 coding style]({{site.labs}}/CodingStyle.html) - including consistent formatting, selection of identifier names, and use of meaningful comments - in addition to correctness and testing.
 
@@ -168,7 +162,7 @@ When adding a new item with `set_insert()` or `hashtable_insert()`, both modules
 * Your code should, as always, follow [CS50 coding style]({{site.labs}}/CodingStyle.html).
   Notice that the module interfaces, defined in the `.h` files we provide, follows that naming convention, preceding each module's function names with the name of the module, and an underscore (e.g., `counters_new()`).
 
-## Hints {#hints}
+## Hints
 
 You are encouraged to follow the style and layout of the `bag` module when developing new modules.
 
@@ -189,7 +183,7 @@ They were also covered in CS10; see the [notes](https://www.cs.dartmouth.edu/~tj
 [notes](https://www.cs.dartmouth.edu/~tjp/cs10/notes11.html),
 [slides](cs10-hashtables.pdf).
 
-## What to hand in {#what}
+## What to hand in
 
 *Each* of the four subdirectories of your `lab3` repo must include the following files:
 
@@ -257,6 +251,6 @@ Your `lab3` directory must contain the following, plus any programs, scripts, or
 
 > This listing is produced by the `tree` program.  Neat, huh?
 
-## Submitting your lab {#submit}
+## Submitting your lab
 
 Please read those [instructions]({{site.labs}}/submit.html) carefully!
