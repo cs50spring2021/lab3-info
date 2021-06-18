@@ -39,14 +39,14 @@ Most of these data structures allow you to store a collection of "items".
 Both the **set** and **hashtable** are examples of an abstract data structure called a *dictionary*, which provide methods like `insert(key, item)` and `item = retrieve(key)`, where the `key` allows the structure to distinguish among the items it stores.
 
   
-| Behavior                | **list**   | **bag**  || **set**| **counters**    | **hashtable** |
-|:----------------------- |:---------- |:-------- ||:------ |:--------------- |:--------- |
-| stores an *item*        | yes        | yes      || yes    | no              | yes       |
-| uses a *key*            | no         | no       || yes    | yes             | yes       |
-| keeps items in order    | yes        | no       || no     | no              | no        |
-| retrieval               | first item | any item || by key | by key          | by key    |
-| insertion of duplicates | allowed    | allowed  || error  | increment count | error     |
-  
+| Behavior                | **list**   | **bag**  | **set**| **counters**    | **hashtable** |
+|:----------------------- |:---------- |:-------- |:------ |:--------------- |:------------- |
+| stores an *item*        | yes        | yes      | yes    | no              | yes           |
+| uses a *key*            | no         | no       | yes    | yes             | yes           |
+| keeps items in order    | yes        | no       | no     | no              | no            |
+| retrieval               | first item | any item | by key | by key          | by key        |
+| insertion of duplicates | allowed    | allowed  | error  | increment count | error         |
+
 
 Notice that
 
