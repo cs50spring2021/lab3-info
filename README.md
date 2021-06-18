@@ -2,11 +2,11 @@
 
 In this lab you will develop some general-purpose data structures that, with modular design, can be re-used for other labs - most notably, the Tiny Search Engine (Labs 4-5-6).
 
-Grading will focus on [CS50 coding style]({{site.labs}}/CodingStyle.html) - including consistent formatting, selection of identifier names, and use of meaningful comments - in addition to correctness and testing.
+Grading will focus on [CS50 coding style](https://www.cs.dartmouth.edu/~cs50/Labs/CodingStyle.html) - including consistent formatting, selection of identifier names, and use of meaningful comments - in addition to correctness and testing.
 
 ***Your C code must compile without producing any compiler warnings.***
 You will lose points if the compiler produces warnings when using our CS50-standard compiler flags (as shown in the `bag/Makefile`).
-Recall our policy about [programs that crash]({{site.logistics}}#crash).
+Recall our policy about [programs that crash](https://www.cs.dartmouth.edu/~cs50/Logistics/index.html/#crash).
 
 ***If your submitted code fails to compile, or triggers a segmentation fault,*** you will fail all/some of our correctness tests, and lose points for correctness on those test cases.
 Write defensive code: each function should check its pointer parameters for NULL, and take some appropriate (safe) action.
@@ -18,7 +18,7 @@ In short, it is far better for you to demonstrate you *know* about the bug than 
 ## Assignment
 
 :point_right:
-Accept the assignment using the link in the {{site.canvaslink}} Assignment "Lab 3", which will lead you to clone a starter kit that implements the **bag**, **file**, and **mem** modules.
+Accept the assignment using the link in the Canvas Assignment "Lab 3", which will lead you to clone a starter kit that implements the **bag**, **file**, and **mem** modules.
 
 :point_right:
 Add three new modules, each of which defines a different data structure.
@@ -153,20 +153,20 @@ When adding a new item with `set_insert()` or `hashtable_insert()`, both modules
 	* The module is then responsible for this memory - and later freeing it - just like any other memory it allocates.  This 'copy' semantic is convenient for the caller, who need not worry about how to allocate and manage the key string after inserting it into the set or hashtable.
 	* You may assume that a non-NULL `key` is a proper C string; that is, it is null-terminated.
 * Your code must have no memory leaks. We will check!
-	* You may find the [**mem** module]({{site.lectures}}/lab3-mem) (provided) useful - or use the native `malloc` and `free`.
-	* You may find [valgrind]({{site.lectures}}/valgrind) useful.
-* Your module must have a unit-test mechanism, either included within the module code (see, for example, the bottom of `file.c` in the [file module]({{site.lectures}}/lab3-file)) or as a test driver (see, for example, `bagtest.c` in the [bag module]({{site.lectures}}/lab3-bag)).
+	* You may find the [**mem** module](https://www.cs.dartmouth.edu/~cs50/Lectures/units/lab3-mem) (provided) useful - or use the native `malloc` and `free`.
+	* You may find [valgrind](https://www.cs.dartmouth.edu/~cs50/Lectures/units/valgrind) useful.
+* Your module must have a unit-test mechanism, either included within the module code (see, for example, the bottom of `file.c` in the [file module](https://www.cs.dartmouth.edu/~cs50/Lectures/units/lab3-file)) or as a test driver (see, for example, `bagtest.c` in the [bag module](https://www.cs.dartmouth.edu/~cs50/Lectures/units/lab3-bag)).
 * Your modules must each have a `Makefile` to compile and test the module code.
 	* Your `Makefile` must have a `make test` target that runs your unit test.
 	* Your `Makefile` should have a `make clean` target that cleans up the directory of any files created by `make` or `make test`.
-* Your code should, as always, follow [CS50 coding style]({{site.labs}}/CodingStyle.html).
+* Your code should, as always, follow [CS50 coding style](https://www.cs.dartmouth.edu/~cs50/Labs/CodingStyle.html).
   Notice that the module interfaces, defined in the `.h` files we provide, follows that naming convention, preceding each module's function names with the name of the module, and an underscore (e.g., `counters_new()`).
 
 ## Hints
 
 You are encouraged to follow the style and layout of the `bag` module when developing new modules.
 
-You can also learn a lot from our [binary trees]({{site.examples}}/trees) example.
+You can also learn a lot from our [binary trees](https://www.cs.dartmouth.edu/~cs50/Lectures/examples/trees) example.
 You are welcome to copy snippets of code from this (or any other) CS50 example code as long as you add a comment indicating you've done so.
 
 We suggest implementing the **set** and **counters** as simplified linked lists, much like we did for `bag`.
@@ -174,9 +174,9 @@ Each should be an independent implementation because they differ in detail and s
 
 Your **hashtable** module, on the other hand, should make use of the **set** data structure.
 Indeed, your hashtable should likely be an array of pointers to sets.
-Allocating an array of pointers can be tricky; consider these [tips](array-allocate.html).
+Allocating an array of pointers can be tricky; recall the unit about [C arrays](https://www.cs.dartmouth.edu/~cs50/Lectures/units/c-arrays.html).
 
-***Linked lists*** were demonstrated in [sorter4.c]({{site.examples}}/sorter4.c) through [sorter7.c]({{site.examples}}/sorter7.c), although you will need to generalize.
+***Linked lists*** were demonstrated in [sorter4.c](https://www.cs.dartmouth.edu/~cs50/Lectures/examples/sorter4.c) through [sorter7.c](https://www.cs.dartmouth.edu/~cs50/Lectures/examples/sorter7.c), although you will need to generalize.
 They were also covered in CS10; see the [notes](https://www.cs.dartmouth.edu/~tjp/cs10/notes6.html).
 
 ***Hashtables were also covered in CS10:***
@@ -253,4 +253,4 @@ Your `lab3` directory must contain the following, plus any programs, scripts, or
 
 ## Submitting your lab
 
-Please read those [instructions]({{site.labs}}/submit.html) carefully!
+Please read those [instructions](https://www.cs.dartmouth.edu/~cs50/Labs/submit.html) carefully!
